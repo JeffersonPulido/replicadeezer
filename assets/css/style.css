@@ -440,7 +440,7 @@ body{
 }
 
 .accordion .label::before {
-    content: '+';
+    content: '►';
     color: white;
     position: absolute;
     top: 50%;
@@ -468,8 +468,8 @@ body{
 }
 
 .accordion .container.active .label::before {
-    content: '-';
-    font-size: 30px;
+    content: '▼';
+    font-size: 20px;
 }
 .downloads{
     display: flex;
@@ -481,4 +481,75 @@ body{
 hr{
     background-color: gray;
     width: 100%;
+}
+
+/*responsive*/
+@media screen and (min-width: 1200px){
+    .title{
+        font-size: 1rem;
+    }
+    .card{
+        max-width: 600px;
+        padding: 24px 80px 16px;
+    }
+    .card-details{
+        font-size: 16px;
+    }
+    .card-title{
+        font-size: 30px;
+    }
+    .info{
+        max-width: 600px;
+    }
+    .info .info-title{
+        font-size: 5vh;
+    }
+    .album{     
+        grid-template-columns: repeat(5, 1fr);
+        grid-column-gap: 10vh;
+        grid-row-gap: 10vh;
+    }
+    .album .img-album{
+        width: 30vh;
+    }
+    .downloads{
+        margin-top: 3rem;
+    }
+    .info{
+        max-width: 800px;
+    }
+    .accordion .container.active .content {
+        height: 12vh;
+    }
+}
+@media screen and (min-width: 1500px){
+    .info .info-description{
+        font-size: 2vh;
+    }
+    .info .info-title{
+        font-size: 4vh;
+    }
+    .img-flow{
+        width: 30%;
+    }
+    .info{
+        max-width: 800px;
+    }
+    .img-banner{
+        width: 60%;
+    }
+    .album{     
+        grid-template-columns: repeat(5, 1fr);
+        grid-column-gap: 8vh;
+        grid-row-gap: 8vh;
+    }
+    .accordion .label{
+        font-size: 3vh;
+    }
+    .accordion .container.active .content {
+        height: 6vh;
+    }
+    .icon{
+        width: 20vh;
+    }
 }

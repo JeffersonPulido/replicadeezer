@@ -156,7 +156,7 @@ body{
 }
 .container-info{
     text-align:center;
-    
+    margin-bottom: -5px;
 }
 .info{
     margin:0px auto;
@@ -211,3 +211,127 @@ body{
     text-decoration: none;
     text-transform: uppercase;
 }
+.btn-info-sl{
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 32PX;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 32px;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    max-width: 200px;
+    font-weight: 500;
+    align-items: center;
+    border-radius: 100px;
+    border: 1px solid rgba(0,0,0,0);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.img-flow{
+    width: 50%;
+    cursor: pointer;
+}
+.container-catalogo{
+    text-align:center;
+    background-color: #121216;
+}
+.container-catalogo .btn-info{
+    font-family: 'Rubik', sans-serif;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 32px;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    max-width: 250px;
+    font-weight: 500;
+    align-items: center;
+    border-radius: 100px;
+    border: 1px solid rgba(0,0,0,0);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.container-album{
+    text-align:center;
+}
+.album{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    max-width: 600px;
+    grid-column-gap: 5vh;
+    grid-row-gap: 5vh;
+    margin-left: 5%;
+}
+.album .img-album{
+    width: 25vh;
+    border-radius: 0.5rem;
+    
+}
+.title-album{
+    color: gray;
+    margin-top: 8px;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 0;
+}
+.autor-album{
+    color: gray;
+    margin-top: 2px;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+.container-album .btn-info{
+    font-family: 'Rubik', sans-serif;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 32px;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    max-width: 300px;
+    font-weight: 500;
+    align-items: center;
+    border-radius: 100px;
+    border: 1px solid rgba(0,0,0,0);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/****/

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
+
 body{
     background: rgb(0,0,0);
     background: linear-gradient(270deg, rgba(0,0,0,1) 13%, rgba(50,89,11,1) 32%, rgba(49,26,77,1) 57%, rgba(89,11,11,1) 72%, rgba(0,0,0,1) 92%);
@@ -6,12 +7,9 @@ body{
     font-family: 'Rubik', sans-serif;
 }
 .container{
-    height: 100%;
-    margin-top: 0%;
-    padding: 0%;
-    top: 0%;
     background-color: transparent;
     backdrop-filter: blur(500px);
+    max-height: 100vh;
 }
 .header{
     text-align:center;
@@ -244,12 +242,11 @@ body{
 }
 .container-catalogo{
     text-align:center;
-    background-color: #121216;
 }
 .container-catalogo .btn-info{
     font-family: 'Rubik', sans-serif;
     margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-size: 14px;
     margin-left: auto;
     margin-right: auto;
@@ -310,7 +307,7 @@ body{
 .container-album .btn-info{
     font-family: 'Rubik', sans-serif;
     margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     font-size: 14px;
     margin-left: auto;
     margin-right: auto;
@@ -334,4 +331,154 @@ body{
     text-decoration: none;
     text-transform: uppercase;
 }
-/****/
+.container-footer{
+    text-align:center;
+}
+.social-network{
+    text-align: center;
+}
+.logo{
+    text-align: center;
+}
+.logo-footer{
+    width: 25vh;
+    margin:0px auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    cursor: pointer;
+}
+.fa-brands{
+    color: white;
+    font-size: 4vh;
+    letter-spacing: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.copyright{
+    color: gray;
+    font-family: 'Rubik', sans-serif;
+}
+.wrap-gray{
+    padding-bottom: 2vh;
+    background-color: #121216;
+}
+.container-infofinal{
+    text-align: center;
+}
+.lines-effect{
+    color: white;
+    display: inline-block;
+    position: relative;
+}
+.lines-effect::after{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    background-color: gray;
+    top: 0.6em;
+    right: -140px;
+}
+.lines-effect::before{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 1px;
+    background-color: gray;
+    top: 0.6em;
+    left: -140px;
+}
+.container-infofinal .btn-info{
+    font-family: 'Rubik', sans-serif;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 32px;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    max-width: 200px;
+    font-weight: 500;
+    align-items: center;
+    border-radius: 100px;
+    border: 1px solid rgba(0,0,0,0);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/**/
+
+.accordion {
+    width: 100%;
+    max-width:  650px;
+    margin: 10px auto;
+}
+.accordion .container {
+    position: relative;
+    margin: 10px 10px;
+}
+
+.accordion .label {
+    position: relative;
+    padding: 10px 0;
+    font-size: 4vh;
+    color: white;
+    cursor: pointer;
+    text-align: left;
+    font-family: 'Rubik', sans-serif;
+}
+
+.accordion .label::before {
+    content: '+';
+    color: white;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 20px;
+    transform: translateY(-50%);
+    font-weight: 700;
+}
+
+.accordion .content {
+    position: relative;
+    background: transparent;
+    height: 0;
+    font-size: 15px;
+    text-align: left;
+    width: 100%;
+    max-width: 650px;    
+    overflow: hidden;
+    transition: 0.5s;
+    color: white;
+}
+
+.accordion .container.active .content {
+    height: 20vh;
+}
+
+.accordion .container.active .label::before {
+    content: '-';
+    font-size: 30px;
+}
+.downloads{
+    display: flex;
+}
+.icon{
+    width: 30vh;
+    cursor: pointer;
+}
+hr{
+    background-color: gray;
+    width: 100%;
+}

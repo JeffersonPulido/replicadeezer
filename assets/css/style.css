@@ -9,7 +9,7 @@ body{
 .container{
     background-color: transparent;
     backdrop-filter: blur(500px);
-    max-height: 100vh;
+    max-height: 500vh;
     height: 100%;
 }
 .header{
@@ -522,6 +522,12 @@ hr{
     .accordion .container.active .content {
         height: 12vh;
     }
+    .container{
+        background-color: transparent;
+        backdrop-filter: blur(500px);
+        max-height: 600vh;
+    }
+    
 }
 @media screen and (min-width: 1500px){
     .info .info-description{
@@ -584,6 +590,7 @@ hr{
     .icon{
         width: 20vh;
     }
+
 }
 @media screen and (max-width: 412px){
     .album{     

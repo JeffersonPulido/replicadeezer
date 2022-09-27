@@ -630,3 +630,41 @@ hr{
         margin-bottom: 0;
     }
 }
+@media screen and (max-width: 500px){
+    .album{     
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 2vh;
+        grid-row-gap: 2vh;
+        margin-left: 30%;
+    }
+    .img-flow{
+        width: 100%;
+    }
+    .img-banner{
+        width: 100%;
+    }
+    .accordion .label{
+        font-size: 2vh;
+    }
+    .accordion .container.active .content {
+        height: 15vh;
+    }
+    .icon{
+        width: 15vh;
+        margin-top: 5vh;
+        margin-bottom: 2vh;
+    }
+    .info{
+        margin-bottom: 0;
+    }
+    .info .info-title{
+        font-size: 25px;
+    }
+    .info .info-description{
+        font-size: 18px;
+    }
+    .container-infofinal .btn-info{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}

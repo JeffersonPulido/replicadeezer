@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 body{
-    
-    background: linear-gradient(270deg, rgba(0,0,0,1) 13%, rgba(50,89,11,1) 32%, rgba(49,26,77,1) 57%, rgba(89,11,11,1) 72%, rgba(0,0,0,1) 90%);
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(173,37,37,1) 30%, rgba(108,28,131,1) 50%, rgba(31,68,15,1) 70%, rgba(0,0,0,1) 100%);
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
@@ -15,13 +15,40 @@ body{
     text-align:center;
     padding-top: 2rem;
 }
+.btn-login{
+    border: 1px solid white;
+    border-radius: 100px;
+    height: 42px;
+    line-height: 26px;
+    padding: 8px 16px;
+    cursor: pointer;
+    outline: 0 none;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    float: right; 
+    transition: 0.3s ease-in-out;
+    display: none;
+}
+.btn-login:hover{
+    color: black;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+}
+.login{
+    margin-right: 5vh;
+    margin-top: -5vh;
+}
 .title{
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 0.8rem;
-    margin-top: 1rem;
+    margin-top: 10vh;
 }
 .logo{
     width: 20vh;
@@ -482,9 +509,113 @@ hr{
     background-color: gray;
     width: 100%;
 }
+/*Hamburguer menu*/
+.hamburger{
+	position:fixed;
+  background-color:transparent;
+	left: 80%;
+	top:2vh;
+	height:30px;
+	width:30px;
+	padding:20px 20px;
+	-webkit-transform:translate3d(0, 0, 0);
+	transform:translate3d(0, 0, 0);
+	-webkit-transition:-webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	transition:transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	z-index:1002;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none
+}
+.hamburger.is-active{
+  background-color:none;
+}
+._layer{
+	background:#ffffff;
+	margin-bottom:4px;
+	border-radius:2px;
+	width:28px;
+	height:4px;
+	opacity:1;
+	-webkit-transform:translate3d(0, 0, 0);
+	transform:translate3d(0, 0, 0);
+	-webkit-transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+}
+.hamburger:hover .-top{
+	-webkit-transform:translateY(-100%);
+	-ms-transform:translateY(-100%);
+	transform:translateY(-100%);
+}
+.hamburger:hover .-bottom{
+	-webkit-transform:translateY(100%);
+	-ms-transform:translateY(100%);
+	transform:translateY(100%);
+	}
+.hamburger.is-active .-top{
+	-webkit-transform:translateY(200%) rotate(45deg) !important;
+	-ms-transform:translateY(200%) rotate(45deg) !important;
+	transform:translateY(200%) rotate(45deg) !important;
+}
+.hamburger.is-active .-mid{
+	opacity:0;
+}
+.hamburger.is-active .-bottom{
+	-webkit-transform:translateY(-200%) rotate(135deg) !important;
+	-ms-transform:translateY(-200%) rotate(135deg) !important;
+	transform:translateY(-200%) rotate(135deg) !important;
+}
 
+.menuppal.is_active{
+  transform: translate3d(0px, 0px, 0px);
+}
+.menuppal{
+   background-color:#121216;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    transform: translate3d(0px, -100%, 0px);
+    transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
+    width: 100%;
+    z-index: 1001;
+    padding-top: 5vh;
+}
+.menuppal ul{
+  margin:0;padding:0;
+}
+.menuppal ul li { 
+    list-style: none;
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size:1.5rem;
+    line-height:3em;
+	height:3em;
+    color:white;
+	text-transform:none;
+	font-weight:bold;
+}
+.menuppal ul li a{
+  text-decoration:none;
+  color:white;
+}
+.menuppal ul li a:hover{
+  text-decoration:none;
+  color:#333;
+}
 /*responsive*/
 @media screen and (min-width: 1200px){
+    .hamburger{
+        display: none;
+    }
+    .btn-login{
+        display: block;
+    }
     .title{
         font-size: 1rem;
     }
@@ -530,6 +661,9 @@ hr{
     
 }
 @media screen and (min-width: 1500px){
+    .btn-login{
+        display: block;
+    }
     .info .info-description{
         font-size: 2vh;
     }
@@ -563,6 +697,9 @@ hr{
 
 }
 @media screen and (min-width: 1680px){
+    .btn-login{
+        display: block;
+    }
     .info .info-description{
         font-size: 2vh;
     }

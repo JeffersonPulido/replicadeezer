@@ -508,6 +508,7 @@ hr{
         grid-template-columns: repeat(5, 1fr);
         grid-column-gap: 10vh;
         grid-row-gap: 10vh;
+        
     }
     .album .img-album{
         width: 30vh;
@@ -548,6 +549,7 @@ hr{
         grid-template-columns: repeat(5, 1fr);
         grid-column-gap: 8vh;
         grid-row-gap: 8vh;
+        
     }
     .accordion .label{
         font-size: 3vh;
@@ -580,6 +582,7 @@ hr{
         grid-template-columns: repeat(5, 1fr);
         grid-column-gap: 4vh;
         grid-row-gap: 4vh;
+        
     }
     .accordion .label{
         font-size: 3vh;
@@ -635,7 +638,7 @@ hr{
         grid-template-columns: repeat(1, 1fr);
         grid-column-gap: 2vh;
         grid-row-gap: 2vh;
-        margin-left: 30%;
+        margin-left: 25%;
     }
     .img-flow{
         width: 100%;
